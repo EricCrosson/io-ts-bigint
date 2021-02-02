@@ -3,22 +3,13 @@
  */
 
 import * as t from 'io-ts'
+import { PositiveBigInt } from './PositiveBigInt'
+import { ZeroBigInt } from './ZeroBigInt'
 
 /**
  * @since 0.0.1
  */
-export interface NonNegativeBigIntBrand {
-    readonly NonNegativeBigInt: unique symbol
-}
-
-/**
- * @since 0.0.1
- */
-export const NonNegativeBigInt = t.brand(
-    t.bigint,
-    (n): n is t.Branded<bigint, NonNegativeBigIntBrand> => BigInt(0) <= n,
-    'NonNegativeBigInt'
-)
+export const NonNegativeBigInt = t.union([PositiveBigInt, ZeroBigInt])
 
 /**
  * @since 0.0.1
