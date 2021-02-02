@@ -1,6 +1,6 @@
 {
     "name": "io-ts-bigint",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "io-ts library for bigints",
     "homepage": "https://github.com/EricCrosson/io-ts-bigint",
     "bugs": {
