@@ -9,7 +9,7 @@ import { ZeroBigInt } from './ZeroBigInt'
 /**
  * @since 0.0.1
  */
-export const NonNegativeBigInt = t.union([PositiveBigInt, ZeroBigInt])
+export const NonNegativeBigInt = t.union([ZeroBigInt, PositiveBigInt])
 
 /**
  * @since 0.0.1
