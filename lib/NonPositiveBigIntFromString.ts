@@ -8,4 +8,6 @@ import { BigIntFromString } from './BigIntFromString'
 /**
  * @since 0.0.1
  */
-export const NonPositiveFromString = BigIntFromString.pipe(NonPositiveBigInt)
+export const NonPositiveBigIntFromString = BigIntFromString.pipe(
+    NonPositiveBigInt
+)
