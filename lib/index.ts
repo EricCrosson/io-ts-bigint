@@ -67,3 +67,33 @@ export * from './ZeroBigIntFromString'
  * @since 0.0.1
  */
 export * from './ZeroBigInt'
+
+/**
+ * @since 1.1.0
+ */
+export * from './StringOfBigInt'
+
+/**
+ * @since 1.1.0
+ */
+export * from './StringOfNegativeBigInt'
+
+/**
+ * @since 1.1.0
+ */
+export * from './StringOfNonNegativeBigInt'
+
+/**
+ * @since 1.1.0
+ */
+export * from './StringOfNonPositiveBigInt'
+
+/**
+ * @since 1.1.0
+ */
+export * from './StringOfPositiveBigInt'
+
+/**
+ * @since 1.1.0
+ */
+export * from './StringOfZeroBigInt'
