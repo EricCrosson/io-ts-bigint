@@ -4,15 +4,15 @@
 
 import * as t from 'io-ts'
 import { NonNegativeBigInt } from './NonNegativeBigInt'
-import { PositiveBigIntFromString } from './PositiveBigIntFromString'
+import { StringOfPositiveBigInt } from './StringOfPositiveBigInt'
+import { StringOfZeroBigInt } from './StringOfZeroBigInt'
 import { withEncode } from './withEncode'
-import { ZeroBigIntFromString } from './ZeroBigIntFromString'
 
 /**
  * @since 1.1.0
  */
 export const StringOfNonNegativeBigInt = withEncode(
-    t.union([ZeroBigIntFromString, PositiveBigIntFromString]),
+    t.union([StringOfZeroBigInt, StringOfPositiveBigInt]),
     (a): NonNegativeBigInt => BigInt(a) as NonNegativeBigInt
 )
 
