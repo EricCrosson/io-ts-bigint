@@ -8,4 +8,7 @@ import { NonZeroBigInt } from './NonZeroBigInt'
 /**
  * @since 0.0.1
  */
-export const NonZeroBigIntFromString = BigIntFromString.pipe(NonZeroBigInt)
+export const NonZeroBigIntFromString = BigIntFromString.pipe(
+    NonZeroBigInt,
+    'NonZeroBigIntFromString'
+)
